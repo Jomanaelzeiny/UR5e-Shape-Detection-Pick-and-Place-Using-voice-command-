@@ -15,14 +15,16 @@ Say a command like `square 1` and the robot picks it and drops it in a fixed box
 2. **Start the External Control program on the UR5e teach pendant**
    - On the pendant go to: `Program → URCaps → External Control`
    - Press Play
+   
+make sure to be connected to the internet in order for the voice command to work
 
 3. **Source the workspace** (in every new terminal)
-   ```bash
+
    source ~/ur_driver/install/setup.bash
    ```
 
 4. **Build** (only needed after code changes)
-   ```bash
+ 
    cd ~/ur_driver
    colcon build
    source install/setup.bash
